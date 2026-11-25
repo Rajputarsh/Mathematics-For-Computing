@@ -1,0 +1,16 @@
+import sympy as sp
+
+x, y, z = sp.symbols('x y z')
+
+P = y
+Q = x
+R = 0
+
+curl = [
+    sp.diff(R, y) - sp.diff(Q, z),
+    sp.diff(P, z) - sp.diff(R, x),
+    sp.diff(Q, x) - sp.diff(P, y)
+]
+
+print("Curl:")
+print(curl)
