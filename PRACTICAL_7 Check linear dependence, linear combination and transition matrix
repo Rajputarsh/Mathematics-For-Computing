@@ -1,0 +1,29 @@
+import sympy as sp
+
+# Given vectors
+v1 = sp.Matrix([1, 2])
+v2 = sp.Matrix([2, 4])
+
+A = sp.Matrix.hstack(v1, v2)
+
+print("Linear Dependence:")
+print("Rank:", A.rank())
+
+if A.rank() < A.cols:
+    print("Vectors are Linearly Dependent")
+else:
+    print("Vectors are Linearly Independent")
+
+# Linear combination
+a = 2
+b = 3
+
+print("Linear Combination:")
+print(a*v1 + b*v2)
+
+# Transition matrix between two bases
+B = sp.Matrix([[1, 0], [0, 1]])
+C = sp.Matrix([[1, 1], [0, 1]])
+
+print("Transition Matrix:")
+print(C.inv() * B)
