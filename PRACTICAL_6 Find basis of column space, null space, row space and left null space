@@ -1,0 +1,17 @@
+import sympy as sp
+
+A = sp.Matrix([[1, 2],
+               [2, 4],
+               [3, 6]])
+
+print("Column Space:")
+print(A.columnspace())
+
+print("Null Space:")
+print(A.nullspace())
+
+print("Row Space:")
+print(A.rowspace())
+
+print("Left Null Space:")
+print(A.T.nullspace())
