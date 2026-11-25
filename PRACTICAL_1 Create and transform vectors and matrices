@@ -1,0 +1,25 @@
+import numpy as np
+
+# Create vector
+v = np.array([1, 2, 3])
+print("Vector:", v)
+
+# Create matrix
+A = np.array([[1, 2], [3, 4]])
+print("Matrix:")
+print(A)
+
+# Transpose
+print("Transpose:")
+print(A.T)
+
+# Conjugate transpose
+B = np.array([[1+2j, 3+4j],
+              [5+6j, 7+8j]])
+
+print("Conjugate transpose:")
+print(B.conj().T)
+
+# Column vector
+print("Column vector:")
+print(v.reshape(3, 1))
