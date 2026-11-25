@@ -1,0 +1,19 @@
+import sympy as sp
+
+A = sp.Matrix([[1, 2],
+               [3, 4]])
+
+print("Matrix:")
+print(A)
+
+print("Determinant:")
+print(A.det())
+
+print("Cofactor Matrix:")
+print(A.cofactor_matrix())
+
+print("Adjoint:")
+print(A.adjugate())
+
+print("Inverse:")
+print(A.inv())
