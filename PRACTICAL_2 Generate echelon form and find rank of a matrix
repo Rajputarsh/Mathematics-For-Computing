@@ -1,0 +1,14 @@
+import sympy as sp
+
+A = sp.Matrix([[1, 2, 3],
+               [2, 4, 6],
+               [1, 1, 1]])
+
+print("Original Matrix:")
+print(A)
+
+print("Echelon Form:")
+print(A.echelon_form())
+
+print("Rank:")
+print(A.rank())
