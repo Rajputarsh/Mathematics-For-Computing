@@ -1,0 +1,24 @@
+import sympy as sp
+
+# Encoding matrix
+A = sp.Matrix([[1, 2],
+               [0, 1]])
+
+# Message matrix
+P = sp.Matrix([[1, 3],
+               [2, 4]])
+
+# Encoding
+C = A * P
+
+print("Original Message:")
+print(P)
+
+print("Encoded Message:")
+print(C)
+
+# Decoding
+D = A.inv() * C
+
+print("Decoded Message:")
+print(D)
