@@ -1,0 +1,18 @@
+import sympy as sp
+
+v1 = sp.Matrix([1, 0])
+v2 = sp.Matrix([1, 1])
+
+# First vector
+u1 = v1
+
+# Second vector
+u2 = v2 - (v2.dot(u1) / u1.dot(u1)) * u1
+
+# Normalize vectors
+e1 = u1 / sp.sqrt(u1.dot(u1))
+e2 = u2 / sp.sqrt(u2.dot(u2))
+
+print("Orthonormal Basis:")
+print(e1)
+print(e2)
