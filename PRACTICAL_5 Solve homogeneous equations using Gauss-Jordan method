@@ -11,3 +11,19 @@ print(A.rref())
 
 print("Null Space:")
 print(A.nullspace())
+
+#matrix code.......
+
+/* Homogeneous equations */
+A: matrix([1,2,3],[2,4,6],[1,1,1]);
+
+/* Echelon form */
+echelon(A);
+
+/* Find solutions */
+linsolve(
+ [x+2*y+3*z=0,
+  2*x+4*y+6*z=0,
+  x+y+z=0],
+ [x,y,z]
+);
