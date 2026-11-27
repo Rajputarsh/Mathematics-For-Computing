@@ -27,3 +27,24 @@ print(p)
 
 print("Cayley-Hamilton Verification:")
 print(p.subs(x, A))
+
+#maxima code.......
+
+/* Create matrix */
+A: matrix([2,1],[1,2]);
+
+/* Eigenvalues */
+eigenvalues(A);
+
+/* Eigenvectors */
+eigenvectors(A);
+
+/* Characteristic polynomial */
+charpoly(A,lambda);
+
+/* Diagonalization */
+P: matrix([1,1],[1,-1]);
+D: invert(P).A.P;
+
+/* Verify Cayley-Hamilton theorem */
+A^^2-4*A+3*ident(2);
