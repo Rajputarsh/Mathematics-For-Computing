@@ -27,3 +27,27 @@ C = sp.Matrix([[1, 1], [0, 1]])
 
 print("Transition Matrix:")
 print(C.inv() * B)
+
+#maxima code.........
+
+load("linearalgebra")$
+
+/* Enter vectors */
+v1: [1,2,3];
+v2: [2,4,6];
+v3: [3,6,9];
+
+/* Create matrix */
+A: matrix([1,2,3],[2,4,6],[3,6,9]);
+
+/* Check rank */
+rank(A);
+
+/* Check linear dependence */
+if rank(A)<3 then
+ print("Vectors are linearly dependent")
+else
+ print("Vectors are linearly independent");
+
+/* Linear combination */
+2*v1+3*v2;
