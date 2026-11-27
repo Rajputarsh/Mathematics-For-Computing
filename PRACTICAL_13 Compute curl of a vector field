@@ -14,3 +14,15 @@ curl = [
 
 print("Curl:")
 print(curl)
+
+#maxima code.........
+
+/* Vector field */
+F: [x^2,y^2,z^2];
+
+/* Curl */
+C: [
+ diff(F[3],y)-diff(F[2],z),
+ diff(F[1],z)-diff(F[3],x),
+ diff(F[2],x)-diff(F[1],y)
+];
