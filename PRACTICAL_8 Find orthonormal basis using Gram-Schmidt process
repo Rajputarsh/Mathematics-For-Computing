@@ -16,3 +16,17 @@ e2 = u2 / sp.sqrt(u2.dot(u2))
 print("Orthonormal Basis:")
 print(e1)
 print(e2)
+
+#maxima code......
+
+load("eigen")$
+
+/* Enter matrix */
+A: matrix([1,1,0],[1,0,1],[0,1,1]);
+
+/* Gram-Schmidt process */
+G: gramschmidt(A);
+
+/* Orthonormal basis */
+map('unitvector,G);
+
