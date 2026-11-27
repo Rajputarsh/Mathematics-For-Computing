@@ -23,3 +23,21 @@ print(B.conj().T)
 # Column vector
 print("Column vector:")
 print(v.reshape(3, 1))
+
+#matrix code..................
+
+/* Create a vector */
+v: [1,2,3];
+
+/* Create a matrix */
+A: matrix([1,2],[3,4]);
+
+/* Transpose of matrix */
+transpose(A);
+
+/* Conjugate transpose */
+load("linearalgebra")$
+ctranspose(A);
+
+/* Transpose of vector */
+transpose(v);
