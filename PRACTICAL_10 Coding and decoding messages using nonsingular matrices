@@ -22,3 +22,17 @@ D = A.inv() * C
 
 print("Decoded Message:")
 print(D)
+
+#maxima code........
+
+/* Coding matrix */
+A: matrix([1,1],[1,2]);
+
+/* Message H=8, I=9 */
+M: matrix([8],[9]);
+
+/* Encode message */
+C: A.M;
+
+/* Decode message */
+invert(A).C;
