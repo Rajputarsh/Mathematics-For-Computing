@@ -17,3 +17,19 @@ print(A.adjugate())
 
 print("Inverse:")
 print(A.inv())
+
+#matrix code.......
+
+A: matrix([1,2,3],[0,1,4],[5,6,0]);
+
+/* Determinant */
+determinant(A);
+
+/* Adjoint */
+adjoint(A);
+
+/* Cofactor matrix */
+transpose(adjoint(A));
+
+/* Inverse */
+invert(A);
