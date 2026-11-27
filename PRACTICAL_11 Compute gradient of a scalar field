@@ -12,3 +12,15 @@ gradient = [
 
 print("Gradient:")
 print(gradient)
+
+#maxima code.........
+
+/* Scalar function */
+f: x^2+y^2+z^2;
+
+/* Gradient */
+G: [
+ diff(f,x),
+ diff(f,y),
+ diff(f,z)
+];
