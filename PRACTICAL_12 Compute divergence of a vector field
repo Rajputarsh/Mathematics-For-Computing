@@ -14,3 +14,14 @@ divergence = (
 
 print("Divergence:")
 print(divergence)
+
+#maxima code.........
+
+
+/* Vector field */
+F: [x^2,y^2,z^2];
+
+/* Divergence */
+D: diff(F[1],x)
+  + diff(F[2],y)
+  + diff(F[3],z);
