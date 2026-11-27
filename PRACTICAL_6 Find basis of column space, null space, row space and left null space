@@ -15,3 +15,21 @@ print(A.rowspace())
 
 print("Left Null Space:")
 print(A.T.nullspace())
+
+#maxkima code.......
+
+load("linearalgebra")$
+
+A: matrix([1,2,3],[2,4,6],[1,1,1]);
+
+/* Column space */
+columnspace(A);
+
+/* Null space */
+nullspace(A);
+
+/* Row space */
+columnspace(transpose(A));
+
+/* Left null space */
+nullspace(transpose(A));
