@@ -22,3 +22,18 @@ for i in range(n-1, -1, -1):
 
 print("Solution:")
 print(x)
+
+#matrix code......
+
+/* Enter equations */
+eq1: x+y=5;
+eq2: 2*x+3*y=12;
+
+/* Solve equations */
+linsolve([eq1,eq2],[x,y]);
+
+/* Augmented matrix */
+A: matrix([1,1,5],[2,3,12]);
+
+/* Gauss elimination */
+echelon(A);
